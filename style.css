@@ -2,7 +2,14 @@
 
 :root {
   --text-color: #ffffff;
-  --background-image: url("./assets/bg-desktop.jpg");
+  --background-gradient: linear-gradient(
+    to right,
+    #000000,
+    #0c080a,
+    #130f13,
+    #17151b,
+    #191a22
+  );
   --surface-color: rgba(255, 255, 255, 0.1);
   --border-color: rgba(255, 255, 255, 0.05);
   --li-background-hover-color: rgba(255, 255, 255, 0.05);
@@ -12,7 +19,14 @@
 
 .light {
   --text-color: #000000;
-  --background-image: url("./assets/bg-desktop-light.jpg");
+  --background-gradient: linear-gradient(
+    to right,
+    #cbccd8,
+    #afb0ba,
+    #93949d,
+    #787a80,
+    #5f6065
+  );
   --surface-color: rgba(0, 0, 0, 0.1);
   --border-color: rgba(0, 0, 0, 0.05);
   --li-background-hover-color: rgba(0, 0, 0, 0.05);
@@ -31,7 +45,7 @@ body * {
 }
 
 body {
-  background: var(--background-image) fixed no-repeat;
+  background: var(--background-gradient);
   background-size: cover;
   font-family: "Inter", sans-serif;
 }
