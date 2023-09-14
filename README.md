@@ -29,7 +29,7 @@ These are the techs that I'm most familiar with:
 - PostgreSQL
 - Git and Github
 
-## 💻 Projets
+## 💻 Projects
 
 Currently in my free time I'm working on two projects, which are, CodeTab and Pomodoro Timer, and I'll include every personal project that I developed here.
 
