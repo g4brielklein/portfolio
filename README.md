@@ -35,6 +35,6 @@ Currently in my free time I'm working on two projects, which are, CodeTab and Po
 
 ## 🔖 Social
 
-You can found me both at LinkedIn, at [this link](https://linkedin.com/in/g4brielklein). And [here](https://github.com/g4brielklein) on Github. There're the only social media that I use.
+You can found me both at LinkedIn, at [this link](https://linkedin.com/in/g4brielklein). And [here](https://github.com/g4brielklein) on Github. They're the only social media that I use.
 
 Made by :wave: [Gabriel Klein](https://gabrielklein.dev)
