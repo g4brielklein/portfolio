@@ -8,13 +8,13 @@ all my projects, both completed and under development.
 <p align="center">
   <a href="#-techs">Techs</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projects">Projects</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-social">Social</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-social">Social</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
 <br>
 
 <p align="center">
-  <img alt="Portfolio preview" src=".github/preview.png" width="100%">
+  <img alt="Portfolio preview" src=".github/preview.png" width="60%">
 </p>
 
 ## 🚀 Techs
