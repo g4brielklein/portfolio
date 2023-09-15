@@ -48,10 +48,12 @@ body {
   background: var(--background-gradient);
   background-size: cover;
   font-family: "Inter", sans-serif;
+  height: 100vh;
 }
 
 .container {
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
   margin: 56px auto;
   padding: 24px;
 }
