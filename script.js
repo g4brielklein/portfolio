@@ -4,11 +4,9 @@ const changeTheme = () => {
 
   if (body.classList.contains("light")) {
     body.classList.remove("light");
-    button.style.right = "0";
-    button.style.removeProperty("left");
+    button.style.animation = "toggle-slide-left 0.2s";
   } else {
     body.classList.add("light");
-    button.style.left = "0";
-    button.style.removeProperty("right");
+    button.style.animation = "toggle-slide-right 0.2s forwards";
   }
 };

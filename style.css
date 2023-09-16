@@ -13,7 +13,7 @@
   --surface-color: rgba(255, 255, 255, 0.1);
   --border-color: rgba(255, 255, 255, 0.05);
   --li-background-hover-color: rgba(255, 255, 255, 0.05);
-  --social-links-background-hover-color: rgba(255, 255, 255, 0.2);
+  --highlight-background-hover-color: rgba(255, 255, 255, 0.2);
   --switch-button: url("./assets/moon-stars.svg");
 }
 
@@ -30,7 +30,7 @@
   --surface-color: rgba(0, 0, 0, 0.1);
   --border-color: rgba(0, 0, 0, 0.05);
   --li-background-hover-color: rgba(0, 0, 0, 0.05);
-  --social-links-background-hover-color: rgba(0, 0, 0, 0.2);
+  --highlight-background-hover-color: rgba(0, 0, 0, 0.2);
   --switch-button: url("./assets/sun.svg");
 }
 
@@ -102,7 +102,13 @@ body {
 
   transform: translateY(-50%);
   top: 50%;
-  right: 0;
+  left: 0;
+
+  animation: toggle-slide-left 0.2s;
+}
+
+.switch button:hover {
+  outline: 8px solid var(--highlight-background-hover-color);
 }
 
 .switch .track {
@@ -168,7 +174,7 @@ body {
 }
 
 .social-links a:hover {
-  background-color: var(--social-links-background-hover-color);
+  background-color: var(--highlight-background-hover-color);
 }
 
 footer {
@@ -180,4 +186,22 @@ footer {
 
 footer p a {
   text-decoration: underline;
+}
+
+@keyframes toggle-slide-right {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes toggle-slide-left {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
 }
