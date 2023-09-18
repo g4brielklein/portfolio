@@ -14,7 +14,7 @@ all my projects, both completed and under development.
 <br>
 
 <p align="center">
-  <img alt="Portfolio preview" src=".github/preview.png" width="60%">
+  <img alt="Portfolio preview" src=".github/preview.png" width="80%">
 </p>
 
 ## 🚀 Techs
