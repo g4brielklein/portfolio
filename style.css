@@ -2,14 +2,9 @@
 
 :root {
   --text-color: #ffffff;
-  --background-gradient: linear-gradient(
-    to right,
-    #000000,
-    #0c080a,
-    #130f13,
-    #17151b,
-    #191a22
-  );
+  --background-gradient: #000000; /* fallback for old browsers */
+  --background-gradient: -webkit-linear-gradient(to right, #434343, #000000);
+  --background-gradient: linear-gradient(to right, #434343, #000000);
   --surface-color: rgba(255, 255, 255, 0.1);
   --border-color: rgba(255, 255, 255, 0.05);
   --li-background-hover-color: rgba(255, 255, 255, 0.05);
@@ -19,17 +14,12 @@
 
 .light {
   --text-color: #000000;
-  --background-gradient: linear-gradient(
-    to right,
-    #cbccd8,
-    #afb0ba,
-    #93949d,
-    #787a80,
-    #5f6065
-  );
+  --background-gradient: #fceabb;  /* fallback for old browsers */
+  --background-gradient: -webkit-linear-gradient(to right, #f8b500, #fceabb);
+  --background-gradient: linear-gradient(to right, #f8b500, #fceabb);
   --surface-color: rgba(0, 0, 0, 0.1);
   --border-color: rgba(0, 0, 0, 0.05);
-  --li-background-hover-color: rgba(0, 0, 0, 0.05);
+  --li-background-hover-color: rgba(50, 51, 48, .2);
   --highlight-background-hover-color: rgba(0, 0, 0, 0.2);
   --switch-button: url("./assets/sun.svg");
 }
@@ -69,6 +59,11 @@ body {
   border: 2px solid var(--text-color);
 }
 
+.profile {
+  padding: 24px;
+  text-align: center;
+}
+
 .profile p {
   font-size: 16px;
   line-height: 24px;
@@ -76,9 +71,10 @@ body {
   margin-top: 8px;
 }
 
-.profile {
-  padding: 24px;
-  text-align: center;
+.profile-info p {
+  font-size: 14px;
+  line-height: normal;
+  font-weight: normal;
 }
 
 .switch {
@@ -122,6 +118,14 @@ body {
   backdrop-filter: blur(4px);
 }
 
+.links {
+  padding: 24px 0;
+}
+
+.projects-title {
+  text-align: center;
+}
+
 .links ul {
   display: flex;
   gap: 16px;
@@ -139,10 +143,11 @@ body {
   backdrop-filter: blur(4px);
   transition: background 0.5s;
   cursor: pointer;
+  position: relative;
 }
 
 .links li:hover {
-  background: var(--surface-hover-color);
+  background: var(--li-background-hover-color);
   border: 1.5px solid var(--text-color);
 }
 
@@ -159,6 +164,7 @@ body {
   gap: 24px;
   text-align: center;
   font-size: 14px;
+  margin-bottom: 32px;
 }
 
 .card .card-title {
@@ -167,13 +173,21 @@ body {
 }
 
 .card .in-development-tag {
-  background-color: rgb(198, 198, 16);
+  background-color: #F0DB4F;
   border-radius: 10px;
   font-size: 10px;
   font-weight: normal;
-  display: block;
-  margin: 0 auto;
   padding: 4px 8px;
+  width: 90px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  bottom: 16px;
+}
+
+.card .in-development-tag span {
+  color: #323330;
 }
 
 .social-links {
